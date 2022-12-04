@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Rock_Paper_ScissorsApp: App {
+    @StateObject var vm = GameViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameHomeView()
+                .environmentObject(vm)
         }
     }
 }

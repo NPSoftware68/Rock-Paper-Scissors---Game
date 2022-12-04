@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC453E04293CB8EC00AB4C61 /* StepBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC453E03293CB8EC00AB4C61 /* StepBarView.swift */; };
 		EC577C84293C7D8000DDA7C8 /* Rock_Paper_ScissorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC577C83293C7D8000DDA7C8 /* Rock_Paper_ScissorsApp.swift */; };
-		EC577C86293C7D8000DDA7C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC577C85293C7D8000DDA7C8 /* ContentView.swift */; };
+		EC577C86293C7D8000DDA7C8 /* GameHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC577C85293C7D8000DDA7C8 /* GameHomeView.swift */; };
 		EC577C88293C7D8100DDA7C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC577C87293C7D8100DDA7C8 /* Assets.xcassets */; };
 		EC577C8B293C7D8100DDA7C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC577C8A293C7D8100DDA7C8 /* Preview Assets.xcassets */; };
+		EC577C92293C82AE00DDA7C8 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC577C91293C82AE00DDA7C8 /* GameViewModel.swift */; };
+		EC577C96293C870600DDA7C8 /* TitleTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC577C95293C870600DDA7C8 /* TitleTopView.swift */; };
+		EC577C98293C872500DDA7C8 /* PlayerSelecterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC577C97293C872500DDA7C8 /* PlayerSelecterView.swift */; };
+		EC577C9A293C8A2700DDA7C8 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC577C99293C8A2700DDA7C8 /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC453E03293CB8EC00AB4C61 /* StepBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepBarView.swift; sourceTree = "<group>"; };
 		EC577C80293C7D8000DDA7C8 /* Rock Paper Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Paper Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC577C83293C7D8000DDA7C8 /* Rock_Paper_ScissorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rock_Paper_ScissorsApp.swift; sourceTree = "<group>"; };
-		EC577C85293C7D8000DDA7C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EC577C85293C7D8000DDA7C8 /* GameHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHomeView.swift; sourceTree = "<group>"; };
 		EC577C87293C7D8100DDA7C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC577C8A293C7D8100DDA7C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EC577C91293C82AE00DDA7C8 /* GameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		EC577C95293C870600DDA7C8 /* TitleTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTopView.swift; sourceTree = "<group>"; };
+		EC577C97293C872500DDA7C8 /* PlayerSelecterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSelecterView.swift; sourceTree = "<group>"; };
+		EC577C99293C8A2700DDA7C8 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				EC577C83293C7D8000DDA7C8 /* Rock_Paper_ScissorsApp.swift */,
-				EC577C85293C7D8000DDA7C8 /* ContentView.swift */,
+				EC577C94293C86C400DDA7C8 /* ViewModels */,
+				EC577C93293C86BC00DDA7C8 /* View */,
 				EC577C87293C7D8100DDA7C8 /* Assets.xcassets */,
 				EC577C89293C7D8100DDA7C8 /* Preview Content */,
 			);
@@ -65,6 +76,26 @@
 				EC577C8A293C7D8100DDA7C8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EC577C93293C86BC00DDA7C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC577C85293C7D8000DDA7C8 /* GameHomeView.swift */,
+				EC577C95293C870600DDA7C8 /* TitleTopView.swift */,
+				EC577C97293C872500DDA7C8 /* PlayerSelecterView.swift */,
+				EC577C99293C8A2700DDA7C8 /* ResultView.swift */,
+				EC453E03293CB8EC00AB4C61 /* StepBarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC577C94293C86C400DDA7C8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EC577C91293C82AE00DDA7C8 /* GameViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +168,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC577C86293C7D8000DDA7C8 /* ContentView.swift in Sources */,
+				EC577C92293C82AE00DDA7C8 /* GameViewModel.swift in Sources */,
+				EC577C96293C870600DDA7C8 /* TitleTopView.swift in Sources */,
+				EC577C98293C872500DDA7C8 /* PlayerSelecterView.swift in Sources */,
+				EC453E04293CB8EC00AB4C61 /* StepBarView.swift in Sources */,
+				EC577C86293C7D8000DDA7C8 /* GameHomeView.swift in Sources */,
 				EC577C84293C7D8000DDA7C8 /* Rock_Paper_ScissorsApp.swift in Sources */,
+				EC577C9A293C8A2700DDA7C8 /* ResultView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +309,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,8 +340,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
